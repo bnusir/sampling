@@ -18,6 +18,7 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 **Procedure:** Individuals are assigned to either "wedding" or "brunch" events.\
 **Distribution:**  deterministic, with a fixed distribution (20% for weddings and 80% for brunches), not sampled probabilistically.\
 **Relevance:**  clear attendance lists for weddings vs. non clear attendance lists for brunches.\
+**Observational Units:** Each individual attendee (person) assigned to either a wedding or brunch event.\
 \
 2. **Infection Sampling (infected_indices Selection):**\
 **Function:** np.random.choice\
@@ -26,6 +27,7 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 **Procedure:** Random sampling selects a subset of attendees with infection status for each event type.\
 **Distribution:** each attendee has a 10% probability of being infected.\
 **Relevance:** .\
+**Observational Units:** Each attendee who could potentially be infected\
 \
 3. **Primary Contact Tracing Success Sampling** \
 **Function:** np.random.rand.\
@@ -33,12 +35,14 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 **Sampling Frame:** Only the infected individuals identified in the previous stage.\
 **Procedure:** \
 **Relevance:** \
+**Observational Units:** Each infected individual who is considered for tracing.\
 \
 4. **Secondary Contact Tracing Triggering:** \
 **Sample Frame:** The infected individuals who were successfully traced in the primary stage, grouped by event type.\
 **Procedure:** Counts the number of traced cases per event type. If two or more cases in an event type are successfully traced, secondary tracing is triggered, marking all infected individuals from that event as traced.\
 **Distribution:**\
 **Relevance:**\
+**Observational Units:** Each event type group (weddings or brunches).\
 \
 5. **Simulation Iteration Sampling:**\
 **Function:** simulate_event\
@@ -46,6 +50,7 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 **Sampling Frame:** Each simulation run generates a new, independent sample of the infection and tracing process based on the outlined parameters.\
 **Distribution:** Each simulation is an independent trial. \
 **Relevance:**\
+**Observational Units:** Each simulation iteration of the infection and tracing process.\
 \
 **Question:**\
 Run the Python script file called whitby_covid_tracing.py as is and compare the results to the graphs in the original blog post. Does this code appear to reproduce the graphs from the original blog post?\
