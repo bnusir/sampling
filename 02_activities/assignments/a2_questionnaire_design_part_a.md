@@ -16,25 +16,62 @@ Select one of the scenarios below and design a survey to meet the need(s) outlin
 
 # Your Changes
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `#3`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+Purpose of the Survey:
+
+This survey has been designed to study how music tastes differ relative to aging, whether and how views of popular music are subject to both generational and individual longitudinal changes. Thus, based on personal preference assessments in relation to multiple genres, and further delving into the specifics, factors such as nostalgia, genre loyalty, and openness to new music among people of varying ages will be addressed.
+
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population:
+- Adults in Canada, including current and former students of the University of Toronto.
+
+Sampling Frame:
+- Adults who actively use music reached through the University of Toronto alumni networks, online forums, and social media groups related to U of T affiliates.
+
+Sampling Units:
+- Individuals across different age brackets, ranging from the young adult age bracket - 18 to 30 - to the older adult age bracket, 50+ years.
+
+Observational Units: 
+- Individual responses from participants within different age brackets.
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
+1. What is your age?
+2. How often do you listen to music?
+      - Day-to-day 
+      - Weekly 
+      - Monthly 
+      - Seldom
+
+3. What kind of music do you like to listen to?   
+      - Pop
+      - Rock
+      - Hip-Hop/Rap
+      - Country
+      - Classical
+      - Jazz
+      - Other ( Specify)
+
+4. Has your taste in music changed significantly over time?
+     - Yes, it has changed a lot 
+     - Yes, it has changed somewhat
+     - No it has remained the same  
+     - Not Sure
+
+5.  In your opinion, does age determine the taste of a person for music?
+     -Yes, very much
+     -Yes, somewhats
+     -No, not much
+     -No, not at all
+
 6. write your question here... (optional)
 7. write your question here... (optional)
 8. write your question here... (optional)
